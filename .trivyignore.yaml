@@ -1,0 +1,11 @@
+misconfigurations:
+  - id: GIT-0001
+    paths:
+      - modules/github-service/main.tf
+    statement: Репозитории Portable Agent публичные, потому что продукт разрабатывается как open source.
+    expired_at: 2027-08-31
+  - id: GIT-0003
+    paths:
+      - modules/github-service/main.tf
+    statement: Vulnerability alerts включены отдельным ресурсом github_repository_vulnerability_alerts.
+    expired_at: 2027-08-31
