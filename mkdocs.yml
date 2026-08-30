@@ -11,3 +11,4 @@ nav:
   - Эксплуатация: runbook.md
   - Решения:
       - Отдельный infra-репозиторий: decisions/0001-infra-repository.md
+      - Фабрика сервисов: decisions/0002-service-factory.md

@@ -25,3 +25,7 @@ jobs:
 
   docs:
     uses: portable-agent/.github/.github/workflows/reusable-docs.yml@main
+  security:
+    uses: portable-agent/.github/.github/workflows/reusable-security.yml@main
+    with:
+      trivy-ignore-file: .trivyignore.yaml
