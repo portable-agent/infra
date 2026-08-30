@@ -1,0 +1,13 @@
+site_name: Portable Agent Infra
+site_description: OpenTofu modules и тесты инфраструктуры Portable Agent
+docs_dir: docs
+strict: true
+theme:
+  name: material
+nav:
+  - Главная: index.md
+  - Архитектура: architecture.md
+  - Разработка: development.md
+  - Эксплуатация: runbook.md
+  - Решения:
+      - Отдельный infra-репозиторий: decisions/0001-infra-repository.md

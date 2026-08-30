@@ -1,0 +1,11 @@
+.idea/
+.vscode/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+.tmp-site/
+site/
+*.log

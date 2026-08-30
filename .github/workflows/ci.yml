@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  tofu:
+    name: OpenTofu quality gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: opentofu/setup-opentofu@v2
+        with:
+          tofu_version_file: .opentofu-version
+          tofu_wrapper: false
+      - name: Проверить модули
+        shell: pwsh
+        run: ./scripts/check-tofu.ps1
+
+  docs:
+    uses: portable-agent/.github/.github/workflows/reusable-docs.yml@main
